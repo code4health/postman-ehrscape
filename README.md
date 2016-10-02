@@ -17,7 +17,11 @@ This will automatically install the Ehrscape Collection and Operon Sandpit envir
 
 ## or C. Download Postman files from Git
 
-Click on these links to download the files to your system
+Click on these links to download the files to your system:
+
+[openEHR Ehrscape Collection](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/openEHR%2520Ehrscape%2520Clinical%2520Data%2520Repository.postman_collection.json)
+
+[Operon Sandpit Environment](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/oprn_t1_Sandpit.postman_environment.json)
 
 ## or B. Download your collection files from email
 If you have received an email containing the collection and environment files to use with Postman. The first step is to download these files ready to then be imported into Postman.
