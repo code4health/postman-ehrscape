@@ -1,35 +1,33 @@
 # Getting ready
-This section describes a number of steps to get ready for working with Ehrscape.
+This section describes a number of steps to get ready for working with the Ehrscape API.
 
 ## Get Postman
 
-First you need to install a copy of the API runner application `Postman` (Chrome/Macos/Windows) [Postman Application](http://getpostman.com)
+First you need to install a copy of the API runner application `Postman` (Chrome/MacOS/Windows) [Postman Application](http://getpostman.com)
 This lets you send and receive data from the Ehrscape API without the need for a specific programming language.
 
-Postman also allows you to import a preset collection of API calls which we can use to supply a copy of the Ehrscape API and associated 'environment' file, which contains settings for a specific ehrscape domain (either )
-## A. Run Postman
+Postman also allows you to import a preset collection of API calls which we can use to supply a copy of the Ehrscape API and associated 'environment' file, which contains settings for a specific ehrscape Operino (either )
 
-Click the 'Run Postman Button' to import the Postman 'openEHR Ehrscape Clinical Data Repository' API collection and associated `Operon Sandpit` environment settings.
+## A. Run Postman button
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/aa0eeb03ab2d1324b774#?env%5Boprn_t1_Sandpit%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5Ijoib3BlbkVockFwaSIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiJodHRwczovL3Rlc3Qub3Blcm9uLnN5c3RlbXMifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImRvbWFpbk5hbWUiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoic2FuZHBpdCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiZG9tYWluU3VmZml4IiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6Im9wcm4xIn0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJDRFJOYW1lIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6ImVocnNjYXBlLmNvbSJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiU2Vzc2lvbkhlYWRlciIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiJFaHItU2Vzc2lvbi1kaXNhYmxlZCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5Ijoie3tTZXNzaW9uSGVhZGVyfX0iLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoiIn0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJQYXNzd29yZCIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiJWeW9CQTYsODlncCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiVXNlcm5hbWUiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoib3BybjFfc2FuZHBpdCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYWNjb3VudE5hbWUiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoib3BybjFfc2FuZHBpdCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoiZG9tYWluU3lzdGVtSWQiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoic2FuZHBpdC5vcHJuMS5laHJzY2FwZS5jb20ifSx7ImVuYWJsZWQiOnRydWUsImtleSI6IkF1dGhvcml6YXRpb24iLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoiQmFzaWMgYjNCeWJqRmZjMkZ1WkhCcGREcFdlVzlDUVRZc09EbG5jQT09In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJjb21taXR0ZXJOYW1lIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6IkRyIHNhbmRwaXQifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InBhdGllbnROYW1lIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6Ikl2b3IgQ294In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJzdWJqZWN0SWQiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoiOTk5OTk5OTAwMCJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoibmhzTnVtYmVyIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6Ijk5OTk5OTkwMDAifSx7ImVuYWJsZWQiOnRydWUsImtleSI6InN1YmplY3ROYW1lc3BhY2UiLCJ0eXBlIjoidGV4dCIsInZhbHVlIjoidWsubmhzLm5oc19udW1iZXIifSx7ImVuYWJsZWQiOnRydWUsImtleSI6ImVocklkIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6IjM3NmU1YzRiLWYyYjEtNGQxZi04ZGUwLTNhNTkzZWVhNjE1YyJ9LHsiZW5hYmxlZCI6dHJ1ZSwia2V5IjoicGFydHlJZCIsInR5cGUiOiJ0ZXh0IiwidmFsdWUiOiIxMDA2In0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJ0ZW1wbGF0ZUlkIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6IlZpdGFsIFNpZ25zIEVuY291bnRlciAoQ29tcG9zaXRpb24pIn0seyJlbmFibGVkIjp0cnVlLCJrZXkiOiJjb21wb3NpdGlvbklkIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6IjgyZGE5M2NkLWEzZmMtNGY5Mi1hM2MzLTYzYjJlODM0MjBkOTo6c2FuZHBpdC5vcHJuMS5laHJzY2FwZS5jb206OjEifSx7ImVuYWJsZWQiOnRydWUsImtleSI6IkVoci1TZXNzaW9uLWRpc2FibGVkIiwidHlwZSI6InRleHQiLCJ2YWx1ZSI6ImExMmJlMWJiLTRjMTEtNDBlYy04MzZhLTZkODIyODllMGJiOCJ9XQ==)
+Click the 'Run Postman Button' to import the Postman 'NHS_Code4Health_Ehrscape' API collection.
 
-This will automatically install the Ehrscape Collection and Operon Sandpit environment files.
+[[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/205a8771a50cfa4716a9)
+
+This will automatically install Postman the 'NHS_Code4Health_Ehrscape' Collection .
 
 ## or C. Download Postman files from Git
 
 Click on these links to download the files to your system:
 
-[openEHR Ehrscape Collection](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/openEHR%2520Ehrscape%2520Clinical%2520Data%2520Repository.postman_collection.json)
-
-[Operon Sandpit Environment](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/oprn_t1_Sandpit.postman_environment.json)
+[NHS_Code4Health_Ehrscape Collection](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/openEHR%2520Ehrscape%2520Clinical%2520Data%2520Repository.postman_collection.json)
 
 ## or B. Download your collection files from email
 If you have received an email containing the collection and environment files to use with Postman. The first step is to download these files ready to then be imported into Postman.
 
-Find `openEHR%20Ehrscape%20Clinical%20Data%20Repository.postman_collection` in your email and download it to a folder of your choice (normally the Download folder).
+Find `NHS_Code4Health_Ehrscape.postman_collection` in your email and download it to a folder of your choice (normally the Download folder).
 
 Find `<your_environment_name.postman_environment` in your email and download it to a folder of your choice (normally the Download folder). Please note that for demonstration purposes we are using the `C4H Ripple OSI` environment in this document.
-
 
 
 ### Import Downloaded files into Postman
@@ -52,7 +50,7 @@ On the left hand side you can now see the collection files
 ![Collection](./Images/Collection.jpg)
 
 ## Navigate Postman
-Click on the `openEHR Ehrscape Clinical Data Repository` to reveal the folders, and then click on individual folders to expand and reveal the contents
+Click on the `NHS_Code4Health_Ehrscape` collection to reveal the folders, and then click on individual folders to expand and reveal the contents
 
 ![Navigate Postman](./Images/NavigatePostman.jpg)
 
@@ -127,9 +125,16 @@ offset 0 limit 1
 
 In the Ad-hoc Query window click on `Param` and paste the query string above into the `Value` field, then click on the `Send` button.
 
+**NOTE: In newer versions of Postman you may have to convert the newlines in the AQL string to spaces.**
+e.g.
+
+```
+select a/uid/value as compositionId, a/context/start_time/value as start_time from EHR e[ehr_id/value='{{ehrId}}'] contains COMPOSITION a[openEHR-EHR-COMPOSITION.encounter.v1] where a/name/value= 'Nursing Vital Signs Observations' order by a/context/start_time/value desc offset 0 limit 1
+```
+
 ![Get Composition Id](./Images/RetrieveCompositionIdString.jpg)
 
-Click the `Scroll to response` button in the buttom right hand corner to display the response details. The `compositionId` element in the response is the unqique identifier for the composition and the `start_time` is the time that the document was authored.
+Click the `Scroll to response` button in the bottom right hand corner to display the response details. The `compositionId` element in the response is the unique identifier for the composition and the `start_time` is the time that the document was authored.
 
 ![Get Composition Id result](./Images/RetrieveCompositionIdResult.jpg)
 
@@ -191,7 +196,7 @@ Once the template Id is set, we can commit a composition. The following string i
     "nursing_vital_signs_observations/vital_signs:0/national_early_warning_score_rcp_uk:0/total_score": 3
   }
   ```
-As mentioned before, the exact syntax and how to create a composition will be covered elsewhere. At this stage you should just use the syntax string provided above.
+As before, the exact syntax and how to create a composition will be covered elsewhere. At this stage you should just use the syntax string provided above.
 
 Navigate to the `Composition` folder and highlight `Commit Composition JSON FLAT`. Paste the text above into the Body text box on the right hand side and click on the `Send` button.
 
@@ -207,6 +212,7 @@ The next step is to run a query on recent vital signs compositions and return a 
 Navigate to the `query` folder and select `Ad-hoc Query`.
 
 This is the query string we are going to use to retrieve the last 5 vital signs compositions and return the relevant readings. Once again, just to clarify: the exact syntax and how to create an AQL query will be covered elsewhere. At this stage you can just copy and paste the query syntax string shown below:
+
 ```
 select
 a/uid/value as compositionId,
@@ -230,6 +236,11 @@ where a/name/value= 'Nursing Vital Signs Observations'
 order by a/context/start_time/value desc
 offset 0 limit 5
 ```
+
+**Flattened version of AQL without newlines to paste into Postman**
+```
+select a/uid/value as compositionId, a/context/start_time/value as start_time, b_a/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/magnitude as Rate_magnitude, b_b/data[at0002]/events[at0003]/data[at0001]/items[at0004]/value/magnitude as Heart_Rate_magnitude, b_c/data[at0002]/events[at0003]/data[at0001]/items[at0004]/value/magnitude as Temperature_magnitude, b_f/data[at0001]/events[at0006]/data[at0003]/items[at0004]/value/magnitude as Systolic_magnitude, b_f/data[at0001]/events[at0006]/data[at0003]/items[at0005]/value/magnitude as Diastolic_magnitude, b_g/data[at0001]/events[at0002]/data[at0003]/items[at0006]/value/numerator as spO2_numerator, b_h/data[at0001]/events[at0002]/data[at0003]/items[at0028]/value/magnitude as Total_Score_magnitude from EHR e[ehr_id/value='{{ehrId}}'] contains COMPOSITION a[openEHR-EHR-COMPOSITION.encounter.v1] contains (OBSERVATION b_a[openEHR-EHR-OBSERVATION.respiration.v1] or OBSERVATION b_b[openEHR-EHR-OBSERVATION.pulse.v1] or OBSERVATION b_c[openEHR-EHR-OBSERVATION.body_temperature.v1] or OBSERVATION b_f[openEHR-EHR-OBSERVATION.blood_pressure.v1] or OBSERVATION b_g[openEHR-EHR-OBSERVATION.indirect_oximetry.v1] or OBSERVATION b_h[openEHR-EHR-OBSERVATION.news_rcp_uk.v1]) where a/name/value= 'Nursing Vital Signs Observations' order by a/context/start_time/value desc offset 0 limit 5 ```
+
 
 In the Ad-hoc query window click on `Params` and enter the query string into the `Value` field on the right hand side, then click the `Send` button.
 
