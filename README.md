@@ -1,31 +1,32 @@
 # Getting ready
-This section describes a number of steps to get ready for working with the Ehrscape API.
+This section describes a number of steps to get ready for working with the Code4Health Ehrscape API which allows you t owork with an openEHR Clinical Data Repository (CDR).
 
-## Get Postman
+## Postman
 
-First you need to install a copy of the API runner application `Postman` (Chrome/MacOS/Windows) [Postman Application](http://getpostman.com)
+First you will need to install a copy of the API runner [`Postman`](http://getpostman.com)(Chrome/MacOS/Windows).
+
 This lets you send and receive data from the Ehrscape API without the need for a specific programming language.
 
-Postman also allows you to import a preset collection of API calls which we can use to supply a copy of the Ehrscape API and associated 'environment' file, which contains settings for a specific ehrscape Operino (either )
+Postman also allows you to import a preset collection of API calls which we can use to supply a copy of the Ehrscape API and associated 'environment' file, which contains settings for a specific Ehrscape Operino.
 
 ## A. Run Postman button
 
 Click the 'Run Postman Button' to import the Postman 'NHS_Code4Health_Ehrscape' API collection.
 
-[[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/205a8771a50cfa4716a9)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/205a8771a50cfa4716a9)
 
-This will automatically install Postman the 'NHS_Code4Health_Ehrscape' Collection .
+This will automatically install Postman the 'NHS_Code4Health_Ehrscape' Collection.
 
 ## or C. Download Postman files from Git
 
 Click on these links to download the files to your system:
 
-[NHS_Code4Health_Ehrscape Collection](https://raw.githubusercontent.com/operonsys/postman-ehrscape/master/openEHR%2520Ehrscape%2520Clinical%2520Data%2520Repository.postman_collection.json)
+[NHS_Code4Health_Ehrscape Collection](https://raw.githubusercontent.com/code4health/postman-ehrscape/master/NHS_Code4Health_Ehrscape.postman_collection.json)
 
 ## or B. Download your collection files from email
 If you have received an email containing the collection and environment files to use with Postman. The first step is to download these files ready to then be imported into Postman.
 
-Find `NHS_Code4Health_Ehrscape.postman_collection` in your email and download it to a folder of your choice (normally the Download folder).
+Find the `NHS_Code4Health_Ehrscape.postman_collection` in your email and download it to a folder of your choice (normally the Download folder).
 
 Find `<your_environment_name.postman_environment` in your email and download it to a folder of your choice (normally the Download folder). Please note that for demonstration purposes we are using the `C4H Ripple OSI` environment in this document.
 
